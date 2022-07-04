@@ -1,0 +1,59 @@
+{
+  "name": "commerce-app-expressjs",
+  "version": "1.0.0",
+  "description": "Typescript node Commerce App with NodeJs, Express, PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --clear --inspect --watch 'src/**/*.ts' src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toannguyen5699/Commerce-App-ExpressJs.git"
+  },
+  "author": "Toan Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toannguyen5699/Commerce-App-ExpressJs/issues"
+  },
+  "homepage": "https://github.com/toannguyen5699/Commerce-App-ExpressJs#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/compression": "^1.7.1",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/crypto-js": "^4.1.0",
+    "@types/express": "^4.17.12",
+    "@types/glob": "^7.1.4",
+    "@types/i18n": "^0.13.2",
+    "@types/jest": "^28.1.1",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^15.6.1",
+    "@types/redis": "^2.8.32",
+    "@types/signale": "^1.4.2",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.3",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.8.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "husky": "8.0.1",
+    "jest": "^28.1.1",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "supertest": "^6.2.3",
+    "ts-jest": "^28.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.6.2"
+  }
+}
