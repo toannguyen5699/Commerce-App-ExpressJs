@@ -3,7 +3,7 @@ import { join } from 'path';
 import { createClient } from 'redis';
 
 import { IServer } from '../../common/interface/app.interface';
-import APP_CONFIG from '../locales/app.config';
+import APP_CONFIG from '../app.config';
 import { logger } from '../../utils';
 
 export const client = createClient({
