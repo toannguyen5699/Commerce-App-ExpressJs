@@ -1,6 +1,38 @@
 import express, { Response } from 'express';
 import { getReasonPhrase, StatusCodes } from 'http-status-codes';
 import { ErrorHandler } from '../error';
+
+/**
+ * @method result
+ * @description Custom response
+ * @param data
+ */
+express.response.handler = async function (data) {
+  const res = _this(this);
+
+  try {
+    const result = await data;
+    return res.status(StatusCodes.OK).json({ data: result });
+  } catch (error) {
+    return handleError(error, res);
+  }
+};
+
+express.response.success = function (data) {
+  const res = _this(this);
+  res.status(200).json(data);
+};
+
+/**
+ * @method error
+ * @description Custom response success
+ * @param error
+ */
+express.response.error = function (error: ErrorHandler) {
+  const res = _this(this);
+  return handleError(error, res);
+};
+
 /**
  * @method error
  * @description Custom response success
