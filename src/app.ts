@@ -6,6 +6,7 @@ import { IServer } from './common/interface/app.interface';
 import APP_CONFIG from './config/app.config';
 import { bootstrapConfig } from './config/bootstrap.config';
 import { expressConfig } from './config/express.config';
+import { routeConfig } from './config/route.config';
 import serverConfig from './config/server.config';
 import { logger } from './utils';
 class Server implements IServer {
@@ -18,7 +19,7 @@ class Server implements IServer {
   public start() {
     bootstrapConfig();
     expressConfig(this.app);
-    // routeConfig(this.app);
+    routeConfig(this.app);
     serverConfig();
 
     const server: HttpServer = createServer(this.app);
