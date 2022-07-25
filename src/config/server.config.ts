@@ -16,7 +16,7 @@ export default function (): void {
     if (exitCode ?? exitCode === 0) {
       logger.info(`[System] ExitCode ${exitCode}.`);
     }
-    if (options.exit) process.exit();
+    // if (options.exit) process.exit();
   }
 
   function exitHandler(exitCode: number) {

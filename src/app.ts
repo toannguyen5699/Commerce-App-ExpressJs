@@ -7,7 +7,7 @@ import APP_CONFIG from './config/app.config';
 import { bootstrapConfig } from './config/bootstrap.config';
 import { expressConfig } from './config/express.config';
 import { routeConfig } from './config/route.config';
-import serverConfig from './config/server.config';
+// import serverConfig from './config/server.config';
 import { logger } from './utils';
 class Server implements IServer {
   private app: Application;
@@ -20,7 +20,7 @@ class Server implements IServer {
     bootstrapConfig();
     expressConfig(this.app);
     routeConfig(this.app);
-    serverConfig();
+    // serverConfig();
 
     const server: HttpServer = createServer(this.app);
     server.listen(APP_CONFIG.ENV.APP.PORT, () => {
