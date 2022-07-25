@@ -1,4 +1,7 @@
 {
 	"Not Found": "Not Found",
-	"userNameExist": "userNameExist"
+	"userNameExist": "userNameExist",
+	"OK": "OK",
+	"userNotFound": "userNotFound",
+	"accountUnverified": "accountUnverified"
 }

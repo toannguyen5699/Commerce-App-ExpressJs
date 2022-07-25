@@ -30,9 +30,9 @@ export class UserService {
       throw new ErrorHandler({ message: 'userNotFound' });
     }
 
-    if (userFound.status === AppObject.COMMON_STATUS.UNVERIFIED) {
-      throw new ErrorHandler({ message: 'accountUnverified' });
-    }
+    // if (userFound.status === AppObject.COMMON_STATUS.UNVERIFIED) {
+    //   throw new ErrorHandler({ message: 'accountUnverified' });
+    // }
 
     if (userFound.status === AppObject.COMMON_STATUS.INACTIVE) {
       throw new ErrorHandler({ message: 'accountInactive' });

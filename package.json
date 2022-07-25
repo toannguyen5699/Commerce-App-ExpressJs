@@ -4,7 +4,7 @@
   "description": "Typescript node Commerce App with NodeJs, Express, PostgreSQL",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=local ts-node-dev --clear --inspect --watch 'src/**/*.ts' src/index.ts",
+    "start:dev": "cross-env NODE_ENV=local nodemon --watch 'src/**/*.ts' --exec node --inspect --require ts-node/register src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,11 +23,14 @@
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
     "express": "^4.18.1",
     "helmet": "^5.1.0",
     "http-status-codes": "^2.2.0",
     "i18n": "^0.15.0",
+    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
     "path": "^0.12.7",
     "pg": "^8.7.3",
     "pm2": "^5.2.0",

@@ -10,7 +10,6 @@ export class UserController {
 
   //#region Admin section
   async create(req: Request, res: Response): Promise<any> {
-    console.log(req.body);
     return res.handler(this.userService.create(req.body));
   }
 
